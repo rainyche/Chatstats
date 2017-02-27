@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Import Google Icon Font-->
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+      <title>ChatStats | All Social Media Interation Analyzer</title>
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class = "teal lighten-2" role ="navigation">
+       <div class="nav-wrapper container">
+	        <a id = "logo-container" href = "frontpage.html" class = "brand-logo"><i class="material-icons">chat</i>CHATSTATS</a>
+
+	        <ul class="right hide-on-med-and-down light">
+        		<li><a href="task1.html">Interaction Overview</a></li>
+        		<li><a href="task2.html">Chat Analysis</a></li>
+        		<li class = "active" ><a href="task3.html">Goal Setting</a></li>
+        		<li><a href="home.html">LOGOUT</a></li>
+      		</ul>
+       </div>
+    </nav>
+
+    <div class = "parallax-container">
+      <div class>
+        <br><br><br>
+        <h1 id = "greeting" class = "grey-text center light"> Hi Alice </h1>
+      </div>
+
+      <div><img id="task1" src= "pic/background1.png"></div>
+    </div>
+
+
+    <div class = "container">
+    	<br><br>
+    	<div class = "row">
+    		<div class = "col s6 offset-s3">
+			    	<div class="input-field">
+			    		<select>
+			    		    <option value="" disabled selected>   Choose your target</option>
+			    			<optgroup label = "GROUPS">
+								<option value="" data-icon="pic/family.jpg" class="circle">MI FAMILIA</option>
+								<option value="" data-icon="pic/friends.png" class="circle">SUITE 407</option>
+								<option value="" data-icon="pic/bff.png" class="circle">LOVE &hearts; BFFs</option>
+			    			</optgroup>
+
+			    			<optgroup label = "INDIVIDUALS">
+			    				<option value="" data-icon="pic/alex.png" class="circle">Alex</option>
+								<option value="" data-icon="pic/amber.png" class="circle">Amber</option> 
+								<option value="" data-icon="pic/austin.png" class="circle">Austin</option> 
+								<option value="" data-icon="pic/brett.png" class="circle">Brett</option> 			
+								<option value="" data-icon="pic/cecilia.png" class="circle">Cecilia</option> 
+								<option value="" data-icon="pic/carol.png" class="circle">Carol</option> 
+								<option value="" data-icon="pic/daniel.png" class="circle">Daniel</option> 
+								<option value="" data-icon="pic/doug.png" class="circle">Doug</option> 
+								<option value="" data-icon="pic/emma.png" class="circle">Emma</option> 
+								<option value="" data-icon="pic/hannah.png" class="circle">Hannah</option> 
+								<option value="" data-icon="pic/ian.png" class="circle">Ian</option> 
+								<option value="" data-icon="pic/janet.png" class="circle">Janet</option> 
+								<option value="" data-icon="pic/katherine.png" class="circle">Katherine</option> 
+								<option value="" data-icon="pic/liam.png" class="circle">Liam</option> 
+								<option value="" data-icon="pic/wilson.png" class="circle">Wilson</option> 
+								<option value="" data-icon="pic/nicole.png" class="circle">Nicole</option> 
+			    			</optgroup>	   		
+			    		</select>
+			    		<label>Select your targeted group or individual</label>
+			  		</div>
+		        </div>
+		    </div>
+		</div>
+  	</div>
+
+	<div class = "container">
+		<div class = "row">
+			<div class = "col s6 offset-s3">
+				<div class="input-field">
+					<select>
+						<option value="" disabled selected>   Choose amount of hours</option>
+						<optgroup label = "Hours per week">
+							<option value="" data-icon="pic/clock.png" class="circle">1</option>
+							<option value="" data-icon="pic/clock.png" class="circle">2</option>
+							<option value="" data-icon="pic/clock.png" class="circle">3</option>
+							<option value="" data-icon="pic/clock.png" class="circle">4</option>
+							<option value="" data-icon="pic/clock.png" class="circle">5</option>
+							<option value="" data-icon="pic/clock.png" class="circle">6</option>
+							<option value="" data-icon="pic/clock.png" class="circle">7</option>
+							<option value="" data-icon="pic/clock.png" class="circle">8</option>
+							<option value="" data-icon="pic/clock.png" class="circle">9</option>
+						</optgroup>
+					</select>
+					<label>Select hours to spend with group or individual</label>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class = "container">
+		<div class = "row">
+			<div class = "col s6 offset-s3">
+				<div class="input-field">
+					<select>
+						<option value="" disabled selected>   Choose a topic</option>
+						<optgroup label = "Topics">
+							<option value="" data-icon="pic/anything.png" class="circle">Anything</option>
+							<option value="" data-icon="pic/study.png" class="circle">Study</option>
+							<option value="" data-icon="pic/appointment.png" class="circle">Appointment</option>
+							<option value="" data-icon="pic/meals.jpg" class="circle">Meals</option>
+							<option value="" data-icon="pic/travel.png" class="circle">Travel</option>
+							<option value="" data-icon="pic/business.jpg" class="circle">Bussiness</option>
+							<option value="" data-icon="pic/other.png" class="circle">Other</option>
+						</optgroup>
+					</select>
+					<label>Select a topic that you want to discuss</label>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class = "container2">
+		<div class>
+			<br>
+			<p  id = "confirmButton" class = "center"><a id = "button2" class="waves-effect waves-light btn" href = "goals.html">Confirm</a>
+			<p  id = "viewButton" class = "center"><a class="waves-effect waves-light btn" href = "viewAll.html">View all goals</a>
+		</div>
+	</div>
+
+	<div class = "container">
+  		<br><br><br><br><br><br><br><br><br><br>
+  	</div>
+
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js">
+	</script>
+	<script>
+		$(document).ready(function() {
+			$('#button2');
+		});
+	</script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" rel="stylesheet" />
+	<script src="js/materialize.js">
+	</script>
+	<script src="js/initiation.js"></script>
+	
+
+</body>
+</html>

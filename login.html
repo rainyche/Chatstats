@@ -32,39 +32,43 @@
       	<div class = "row">
       		<div class = "col s6 offset-s3">
       			<br> 
-      			<div class="click-to-toggle">
-		     		<div class = "col s6 m3 click-to-toggle">
-		     			<a class><img src = "pic/messenger.png" height = "70" width="70"></a>
-		     		</div>
+  		     		<div class = "col s6 m3 ">
+  		     			<a href = "#" class = "button"><img src = "pic/messenger.png" height = "70" width="70"></a>
+  		     		</div>
 
-		     		<div class = "col s6 m3 click-to-toggle">
-		     			<a href="#"><img src = "pic/wechat.png" height = "70" width="70"></a>
-		     		</div>
+  		     		<div class = "col s6 m3">
+  		     			<a href = "#" class = "button"><img src = "pic/wechat.png" height = "70" width="70"></a>
+  		     		</div>
 
-		     		<div class = "col s6 m3 click-to-toggle">
-		     			<a href="#"><img src = "pic/slack.png" height = "65" width="65"></a>
-		     		</div>
+  		     		<div class = "col s6 m3">
+  		     			<a href = "#" class = "button"><img src = "pic/slack.png" height = "65" width="65"></a>
+  		     		</div>
 
-		     		<div class = "col s6 m3 click-to-toggle">
-		     			<a href="#"><img src = "pic/groupme.png" height = "70" width="70"></a>
-		     		</div>
+  		     		<div class = "col s6 m3">
+  		     			<a href = "#" class = "button"><img src = "pic/groupme.png" height = "70" width="70"></a>
+  		     		</div>
 
-		     		<ul>
-			     		<li><input class = "center" value = "myname@u.northwestern.edu" type="text"></p>
-			     		<li><input class = "center" value = "12345678910"type="password"></li>
-			     		<p class = "center"><a class="waves-effect waves-light btn" href="frontpage.html"><i class="material-icons right">lock_open</i>SECURE LOGIN</a>
-
-	    			</ul>
+  		     		<ul>
+                <li><p class = "white-text">f</p></li>
+  			     		<li><input class = "center" value = "myname@u.northwestern.edu" type="text"></li>
+  			     		<li><input class = "center" value = "12345678910"type="password"></li>
+  			     		<li><p class = "center"><a class="waves-effect waves-light btn" href="frontpage.html"><i class="material-icons right">lock_open</i>SECURE LOGIN</a></p></li>
+  	    			</ul>
 		     	</div>
 	     	</div>
-     	</div>
-     </div>
-
-
-
-
-
       </div>
 
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"> </script>
+      <script>
+        $(document).ready(function(){
+            $("li").hide();
+            $('.button').click(function(){
+                $("li").show();
+            });
+        });
+      </script>
+
 </body>
+
+
 </html>

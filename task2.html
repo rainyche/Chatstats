@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Import Google Icon Font-->
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+      <title>ChatStats | All Social Media Interation Analyzer</title>
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+      <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+      <script src="js/jquery.cookie.js"></script>
+</head>
+
+<body>
+
+    <nav class = "teal lighten-2" role ="navigation">
+       <div class="nav-wrapper container">
+	        <a id = "logo-container" href = "frontpage.html" class = "brand-logo"><i class="material-icons">chat</i>CHATSTATS</a>
+
+	        <ul class="right hide-on-med-and-down light">
+        		<li><a href="task1.html">Interaction Overview</a></li>
+        		<li class = "active"><a href="task2.html">Chat Analysis</a></li>
+        		<li><a href="task3.html">Goal Setting</a></li>
+        		<li><a href="home.html">LOGOUT</a></li>
+      		</ul>
+       </div>
+    </nav>
+
+    <div>
+      <p id="choose_person">Choose the person you want to analyze</p>
+    </div>
+
+    <div class = "container">
+      <div class = "row">
+        <div class = "col s6 offset-s3">
+          <div class="input-field">
+            <select id="select_people" onchange = "OnChange(this)">
+                <option value="" disabled selected>---- Please select ----</option>
+                <optgroup label = "GROUPS">
+                <option value="MI FAMILIA" data-icon="pic/family.jpg" class="circle">MI FAMILIA</option>
+                <option value="SUITE 407" data-icon="pic/friends.png" class="circle">SUITE 407</option>
+                <option value="LOVE &hearts; BFFs" data-icon="pic/bff.png" class="circle">LOVE &hearts; BFFs</option>
+                </optgroup>
+
+                <optgroup label = "INDIVIDUALS">
+                  <option value="Alex" data-icon="pic/alex.png" class="circle">Alex</option>
+                <option value="Amber" data-icon="pic/amber.png" class="circle">Amber</option> 
+                <option value="Austin" data-icon="pic/austin.png" class="circle">Austin</option> 
+                <option value="Brett" data-icon="pic/brett.png" class="circle">Brett</option>      
+                <option value="Cecilia" data-icon="pic/cecilia.png" class="circle">Cecilia</option> 
+                <option value="Carol" data-icon="pic/carol.png" class="circle">Carol</option> 
+                <option value="Daniel" data-icon="pic/daniel.png" class="circle">Daniel</option> 
+                <option value="Doug" data-icon="pic/doug.png" class="circle">Doug</option> 
+                <option value="Emma" data-icon="pic/emma.png" class="circle">Emma</option> 
+                <option value="Hannah" data-icon="pic/hannah.png" class="circle">Hannah</option> 
+                <option value="Ian" data-icon="pic/ian.png" class="circle">Ian</option> 
+                <option value="Janet" data-icon="pic/janet.png" class="circle">Janet</option> 
+                <option value="Katherine" data-icon="pic/katherine.png" class="circle">Katherine</option> 
+                <option value="Liam" data-icon="pic/liam.png" class="circle">Liam</option> 
+                <option value="Wilson" data-icon="pic/wilson.png" class="circle">Wilson</option> 
+                <option value="Nicole" data-icon="pic/nicole.png" class="circle">Nicole</option> 
+                </optgroup>
+                      
+              </select>
+              <label>Select a group or individual</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "container2">
+    <div class>
+      <br>
+      <p  id = "confirmButton" class = "center"><a id = "button2" class="waves-effect waves-light btn" href = "analyze.html">Analyze</a>
+      <p  id = "viewButton" class = "center"><a class="waves-effect waves-light btn" href = "search.html">Search history</a>
+    </div>
+  </div>
+
+  <script src="js/materialize.js">
+  </script>
+  <script src="js/initiation.js"></script>
+  <script type="text/javascript">
+    function OnChange(dropdown){
+      var myindex  = dropdown.options[dropdown.selectedIndex].text;// This prints correctly
+      $.cookie("choice", myindex);        
+    }
+</script>
+  
+
+</body>
+</html>

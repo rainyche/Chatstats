@@ -18,12 +18,13 @@
     <!--navigator top bar -->
     <nav class = "teal lighten-2" role ="navigation">
        <div class="nav-wrapper container">
-	        <a id = "logo-container" href = "home.html" class = "brand-logo"><i class="material-icons">chat</i>CHATSTATS</a>
+	        <a id = "logo-container" href = "frontpage.html" class = "brand-logo"><i class="material-icons">chat</i>CHATSTATS</a>
 
 	        <ul class="right hide-on-med-and-down light">
         		<li class = "active"><a href="task1.html">Interaction Overview</a></li>
-        		<li><a href="#">Chat Analysis</a></li>
-        		<li><a href="#">Goal Setting</a></li>
+        		<li><a href="task2.html">Chat Analysis</a></li>
+        		<li><a href="task3.html">Goal Setting</a></li>
+            <li><a href="home.html">LOGOUT</a></li>
       		</ul>
        </div>
     </nav>
@@ -37,33 +38,34 @@
       <div><img id="task1" src= "pic/background1.png"></div>
     </div>
 	
-	<br><br><br>
+	<br><br><br><br><br>
 
 	<div class="row">
     	<div class="col s12 m9 l10">
-      		<div id="introduction" class="section scrollspy">
+      		<div id="graph1" class="section scrollspy">
         		<div id = "container1" class = "container"> </div>
       		</div>
 
-		    <div id="structure" class="section scrollspy">
-		        <br><br><br>
-		        <div id = "container2" class ="container"> </div>
-		    </div>
+  		    <div id="graph2" class="section scrollspy">
+  		        <br><br><br><br><br>
+  		        <div id = "container2" class ="container"> </div>
+  		    </div>
 
-            <div id="initialization" class="section scrollspy">
-            	<br><br><br>
-                <div id = "container3" class="container"> </div>
-            </div>
-        </div>
+          <div id="graph3" class="section scrollspy">
+            	<br><br><br><br><br>
+              <div id = "container3" class="container"> </div>
+              <br><br><br><br><br>
+          </div> 
+      </div>
 
 	    <div class="col hide-on-small-only m3 l2">
-	      <ul class="section table-of-contents">
-	        <li><a href="#introduction">Group</a></li>
-	        <li><a href="#structure">Most Frequent</a></li>
-	        <li><a href="#initialization">Individual</a></li>
+	      <ul id = "side-bar" class="section table-of-contents">
+	        <li><a href="#graph1">Group Overview</a></li>
+	        <li><a href="#graph2">Topic Breakdown</a></li>
+	        <li><a href="#graph3">Individual Interaction</a></li>
 	      </ul>
 	    </div>
-  	</div>
+  </div>
         
 
   <!--  Scripts-->
@@ -84,6 +86,7 @@
  </script>
  <script src="js/materialize.js">
  </script>
+ <script src="js/initiation.js"></script>
 
 </body>
 </html>

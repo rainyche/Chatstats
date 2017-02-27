@@ -7,11 +7,60 @@
   position:relative;
 }
 
-#startbutton{
+#choose_person{
+	color: rgba(82,182,172,1);
+	font-size:35px;
+	text-align: center;
+}
+
+#intro1{
 	position: absolute;
 	background-color: rgba(69, 75,71, 0.3);
-	top: 40%;
-	left:41%;
+	text-align: center;
+	top: 18.7%;
+	left:0;
+	width: 100%;
+
+}
+
+#meal_table{
+	width:50%;
+
+}
+
+.go_to_analysis{
+	position:relative;
+	vertical-align: center;
+	margin-left: 40%;
+}
+
+.textcenter{
+	text-align: center;
+}
+
+.row1{
+	position:center;
+}
+
+#blah {
+	font-size:30px;
+}
+
+#intro2{
+	position: absolute;
+	background-color: rgba(69, 75,71, 0.3);
+	text-align: center;
+	top:30%;
+	left:0;
+	width: 100%;
+}
+
+#startbutton{
+	position: absolute;
+	top: 60%;
+	left:0;
+	text-align: center;
+	width: 100%;
 }
 
 #greeting {
@@ -29,4 +78,93 @@
 	position:absolute;
 }
 
+#side-bar{
+	position: fixed;
+	top:80%;
+	height: 100%;
+}
+
+.button{
+	background-color:white;
+}
+
+.btn {
+	width: 250px;
+}
+
+#title {
+	color: rgba(82,182,172,1);
+	font-size:35px;
+	text-align:center;
+}
+
+.wrapper
+{
+    width: 680px;
+    margin: 0 auto;
+}
+
+    .wrapper h1
+    {
+        color: #555;
+        text-align: center;
+        text-shadow: rgba(0, 0, 0, 0.15) 0px 0px 1px;
+        letter-spacing: 2px;
+    }
+
+#conutries
+{
+    width: 650px;
+    background: white;
+}
+
+.alphabet
+{
+    margin: 0 0 10px;
+    overflow: hidden;
+}
+
+    .alphabet a, #countries-table tr
+    {
+        transition: background-color 0.3s ease-in-out;
+        -moz-transition: background-color 0.3s ease-in-out;
+        -webkit-transition: background-color 0.3s ease-in-out;
+    }
+
+    .alphabet a
+    {
+        width: 20px;
+        float: left;
+        color: #333;
+        cursor: pointer;
+        height: 20px;
+        border: 1px solid #CCC;
+        display: block;
+        padding: 2px 2px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 20px;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+        border-right: none;
+        text-decoration: none;
+        background-color: #F1F1F1;
+    }
+
+        .alphabet a.first
+        {
+            border-radius: 3px 0 0 3px;
+        }
+
+        .alphabet a.last
+        {
+            border-right: 1px solid silver;
+            border-radius: 0 3px 3px 0;
+        }
+
+        .alphabet a:hover,
+        .alphabet a.active
+        {
+            background: #FBF8E9;
+            font-weight: bold;
+        }
 
