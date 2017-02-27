@@ -38,7 +38,7 @@
           <div class="input-field">
             <select id="select_people" onchange = "OnChange(this)">
                 <option value="" disabled selected>---- Please select ----</option>
-                <option value="">Lunch and dinner</option>
+                <option value="">Lunch/dinner</option>
                 <option value="">Meetings</option>
                 <option value="">Trips</option>
               </select>
@@ -51,7 +51,7 @@
    <div class = "container2">
     <div>
       <br>
-      <p  id = "confirmButton" class = "center"><a href="#" id = "button2" class="waves-effect waves-light btn" class="keyword_choice">Go</a>
+      <p id = "confirmButton" class = "center"><a href="#" id = "button2" class="waves-effect waves-light btn">Go</a>
     </div>
   </div>
   <div>
@@ -66,18 +66,17 @@
   var globalVariable1 = $.cookie("choice");
   var displayed = "Keyword search for  " + globalVariable1;
   document.getElementById("title").innerHTML = displayed;
-  var mybutton = document.getElementsByClassName("keyword_choice")[0];
   function OnChange(dropdown){
       var mytext = dropdown.options[dropdown.selectedIndex].text;// This prints correctly
       $.cookie("keyword", mytext);    
-      if(mytext == 'Lunch and dinner'){
-        mybutton.href = "lunch_dinner.html";
+      if(mytext == 'Lunch/dinner'){
+        document.getElementById("button2").href = "lunch_dinner.html";
       }
-      else if(dropdown.selectedIndex == 1){
-        mybutton.href = "meetings.html";
+      else if(mytext == 'Meetings'){
+        document.getElementById("button2").href = "meetings.html";
       }
       else{
-        mybutton.href = "trips.html";
+        document.getElementById("button2").href = "trips.html";
       }
   }
 </script>
