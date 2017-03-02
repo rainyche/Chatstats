@@ -14,13 +14,20 @@
 }
 
 #intro1{
+    font-size:60px;
 	position: absolute;
-	background-color: rgba(69, 75,71, 0.3);
 	text-align: center;
-	top: 18.7%;
-	left:0;
-	width: 100%;
+	top: 17%;
+	left:27%;
+}
 
+
+#intro2{
+    font-size:60px;
+    position: absolute;
+    text-align: center;
+    top:33%;
+    left:39.5%;
 }
 
 .table{
@@ -46,14 +53,6 @@
 	font-size:30px;
 }
 
-#intro2{
-	position: absolute;
-	background-color: rgba(69, 75,71, 0.3);
-	text-align: center;
-	top:30%;
-	left:0;
-	width: 100%;
-}
 
 #startbutton{
 	position: absolute;
@@ -66,13 +65,11 @@
 #greeting {
 	position: absolute;
 	top: 10%;
-	left:35%;
+	left:31%;
 	font-size: 10em;
+    opacity:0.8;
 }
 
-#task1{
-	opacity: 0.5;
-}
 
 .points{
 	position:absolute;
