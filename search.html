@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-<!--Import Google Icon Font-->
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-      <title>ChatStats | All Social Media Interation Analyzer</title>
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <link type="text/css" rel="stylesheet" href="css/style.css">
-      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
-      <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
-      <script src="js/jquery.cookie.js"></script>
-</head>
+  <head>
+  <!--Import Google Icon Font-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>ChatStats | All Social Media Interation Analyzer</title>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+  </head>
 
-<body>
-
+  <body>
+  <!--navigation bar-->
     <nav class = "teal lighten-2" role ="navigation">
        <div class="nav-wrapper container">
 	        <a id = "logo-container" href = "frontpage.html" class = "brand-logo"><i class="material-icons">chat</i>CHATSTATS</a>
@@ -32,7 +32,9 @@
     <div>
       <p id="title"></p>
     </div>
-<div class = "container">
+
+    <!--let the user select a keyword-->
+    <div class = "container">
       <div class = "row">
         <div class = "col s6 offset-s3">
           <div class="input-field">
@@ -48,37 +50,36 @@
       </div>
     </div>
 
-   <div class = "container2">
-    <div>
-      <br>
-      <p id = "confirmButton" class = "center"><a href="#" id = "button2" class="waves-effect waves-light btn">Go</a>
+    <div class = "container2">
+      <div>
+        <br>
+        <p id = "confirmButton" class = "center"><a href="#" id = "button2" class="waves-effect waves-light btn">Go</a>
+      </div>
     </div>
-  </div>
-  <div>
+    <div>
       <p id="test"></p>
     </div>
 
-  <script src="js/materialize.js">
-  </script>
-  <script src="js/initiation.js"></script>
-  
-<script type="text/javascript">
-  var globalVariable1 = $.cookie("choice");
-  var displayed = "Keyword search for  " + globalVariable1;
-  document.getElementById("title").innerHTML = displayed;
-  function OnChange(dropdown){
-      var mytext = dropdown.options[dropdown.selectedIndex].text;// This prints correctly
-      $.cookie("keyword", mytext);    
-      if(mytext == 'Lunch/dinner'){
-        document.getElementById("button2").href = "lunch_dinner.html";
+    <script src="js/materialize.js"></script>
+    <script src="js/initiation.js"></script>
+    
+    <script type="text/javascript">
+      var globalVariable1 = $.cookie("choice");
+      var displayed = "Keyword search for  " + globalVariable1;
+      document.getElementById("title").innerHTML = displayed;
+      function OnChange(dropdown){
+          var mytext = dropdown.options[dropdown.selectedIndex].text;// This prints correctly
+          $.cookie("keyword", mytext);    
+          if(mytext == 'Lunch/dinner'){
+            document.getElementById("button2").href = "lunch_dinner.html";
+          }
+          else if(mytext == 'Meetings'){
+            document.getElementById("button2").href = "meetings.html";
+          }
+          else{
+            document.getElementById("button2").href = "trips.html";
+          }
       }
-      else if(mytext == 'Meetings'){
-        document.getElementById("button2").href = "meetings.html";
-      }
-      else{
-        document.getElementById("button2").href = "trips.html";
-      }
-  }
-</script>
-</body>
+    </script>
+  </body>
 </html>

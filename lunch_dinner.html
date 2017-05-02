@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-<!--Import Google Icon Font-->
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-      <title>ChatStats | All Social Media Interation Analyzer</title>
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <link type="text/css" rel="stylesheet" href="css/style.css">
-      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
-      <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
-      <script src="js/jquery.cookie.js"></script>
-</head>
+  <head>
+    <!--Import Google Icon Font-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>ChatStats | All Social Media Interation Analyzer</title>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+  </head>
 
-<body>
-
+  <body>
+    <!--navigation bar-->
     <nav class = "teal lighten-2" role ="navigation">
        <div class="nav-wrapper container">
 	        <a id = "logo-container" href = "frontpage.html" class = "brand-logo"><i class="material-icons">chat</i>CHATSTATS</a>
@@ -32,59 +32,63 @@
     <div>
       <p id="title"></p>
     </div>
-<table class="table" align="center">
-        <thead>
-          <tr>
-              <th class="textcenter">Date</th>
-              <th class="textcenter">Restaurant</th>
-              <th class="textcenter">Cost</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="textcenter">01/01/2017</td>
-            <td class="textcenter">Joy yee</td>
-            <td class="textcenter">$25.4</td>
-          </tr>
-          <tr>
-            <td class="textcenter">01/16/2017</td>
-            <td class="textcenter">Koco Table</td>
-            <td class="textcenter">$17.5</td>
-          </tr>
-          <tr>
-            <td class="textcenter">02/03/2017</td>
-            <td class="textcenter">Flat Top</td>
-            <td class="textcenter">$14.67</td>
-          </tr>
-          <tr>
-            <td class="textcenter">02/05/2017</td>
-            <td class="textcenter">Lou Malnati's</td>
-            <td class="textcenter">$35.5</td>
-          </tr>
-          <tr>
-            <td class="textcenter">02/13/2017</td>
-            <td class="textcenter">LYFE Kitchen</td>
-            <td class="textcenter">$17.7</td>
-          </tr>
-        </tbody>
-      </table>
-   <div class = "container2">
-    <div>
-      <br>
-      <p  id = "confirmButton" class="go_to_analysis"><a id = "button2" class="waves-effect waves-light btn" href = "search.html">Back to keyword</a>
-      <p  id = "confirmButton" class="go_to_analysis"><a id = "button2" class="waves-effect waves-light btn" href = "analyze.html">Go to analysis</a>
-    </div>
-  </div>
 
-  <script src="js/materialize.js">
-  </script>
-  <script src="js/initiation.js"></script>
-  
-<script type="text/javascript">
-  var globalVariable1 = $.cookie("choice");
-  var globalVariable2 = $.cookie("keyword");
-  var displayed = "You had  " + globalVariable2 + " with " + globalVariable1;
-  document.getElementById("title").innerHTML = displayed;
-</script>
-</body>
+    <!--meal table-->
+    <table class="table" align="center">
+      <thead>
+        <tr>
+            <th class="textcenter">Date</th>
+            <th class="textcenter">Restaurant</th>
+            <th class="textcenter">Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="textcenter">01/01/2017</td>
+          <td class="textcenter">Joy yee</td>
+          <td class="textcenter">$25.4</td>
+        </tr>
+        <tr>
+          <td class="textcenter">01/16/2017</td>
+          <td class="textcenter">Koco Table</td>
+          <td class="textcenter">$17.5</td>
+        </tr>
+        <tr>
+          <td class="textcenter">02/03/2017</td>
+          <td class="textcenter">Flat Top</td>
+          <td class="textcenter">$14.67</td>
+        </tr>
+        <tr>
+          <td class="textcenter">02/05/2017</td>
+          <td class="textcenter">Lou Malnati's</td>
+          <td class="textcenter">$35.5</td>
+        </tr>
+        <tr>
+          <td class="textcenter">02/13/2017</td>
+          <td class="textcenter">LYFE Kitchen</td>
+          <td class="textcenter">$17.7</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!--buttons-->
+    <div class = "container2">
+      <div>
+        <br>
+        <p  id = "confirmButton" class="go_to_analysis"><a id = "button2" class="waves-effect waves-light btn" href = "search.html">Back to keyword</a>
+        <p  id = "confirmButton" class="go_to_analysis"><a id = "button2" class="waves-effect waves-light btn" href = "analyze.html">Go to analysis</a>
+      </div>
+    </div>
+
+    <script src="js/materialize.js"></script>
+    <script src="js/initiation.js"></script>
+    
+    <!--get user's choice and display-->
+    <script type="text/javascript">
+      var globalVariable1 = $.cookie("choice");
+      var globalVariable2 = $.cookie("keyword");
+      var displayed = "You had  " + globalVariable2 + " with " + globalVariable1;
+      document.getElementById("title").innerHTML = displayed;
+    </script>
+  </body>
 </html>

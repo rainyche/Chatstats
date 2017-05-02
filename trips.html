@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
-<!--Import Google Icon Font-->
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-      <title>ChatStats | All Social Media Interation Analyzer</title>
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <link type="text/css" rel="stylesheet" href="css/style.css">
-      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
-      <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
-      <script src="js/jquery.cookie.js"></script>
-</head>
+  <head>
+  <!--Import Google Icon Font-->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+        <title>ChatStats | All Social Media Interation Analyzer</title>
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+        <script src="js/jquery.cookie.js"></script>
+  </head>
 
-<body>
-
+  <body>
+    <!--navigation bar-->
     <nav class = "teal lighten-2" role ="navigation">
        <div class="nav-wrapper container">
-	        <a id = "logo-container" href = "frontpage.html" class = "brand-logo"><i class="material-icons">chat</i>CHATSTATS</a>
+          <a id = "logo-container" href = "frontpage.html" class = "brand-logo"><i class="material-icons">chat</i>CHATSTATS</a>
 
-	        <ul class="right hide-on-med-and-down light">
+          <ul class="right hide-on-med-and-down light">
         		<li><a href="task1.html">Interaction Overview</a></li>
         		<li class = "active"><a href="task2.html">Chat Analysis</a></li>
         		<li><a href="task3.html">Goal Setting</a></li>
@@ -32,49 +32,53 @@
     <div>
       <p id="title"></p>
     </div>
-<table class="table" align="center">
-        <thead>
-          <tr>
-              <th class="textcenter">Date</th>
-              <th class="textcenter">Place</th>
-              <th class="textcenter">Duration</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="textcenter">08/05/2016</td>
-            <td class="textcenter">San Diego</td>
-            <td class="textcenter">7 days</td>
-          </tr>
-          <tr>
-            <td class="textcenter">12/20/2016</td>
-            <td class="textcenter">Peru</td>
-            <td class="textcenter">8 days</td>
-          </tr>
-          <tr>
-            <td class="textcenter">01/16/2017</td>
-            <td class="textcenter">New York</td>
-            <td class="textcenter">3 days</td>
-          </tr>
-        </tbody>
-      </table>
-   <div class = "container2">
-    <div>
-      <br>
-      <p  id = "confirmButton" class="go_to_analysis"><a id = "button2" class="waves-effect waves-light btn" href = "search.html">Back to keyword</a>
-      <p  id = "confirmButton" class="go_to_analysis"><a id = "button2" class="waves-effect waves-light btn" href = "analyze.html">Go to analysis</a>
-    </div>
-  </div>
 
-  <script src="js/materialize.js">
-  </script>
-  <script src="js/initiation.js"></script>
-  
-<script type="text/javascript">
-  var globalVariable1 = $.cookie("choice");
-  var globalVariable2 = $.cookie("keyword");
-  var displayed = "You had  " + globalVariable2 + " with " + globalVariable1;
-  document.getElementById("title").innerHTML = displayed;
-</script>
-</body>
+    <!--the trip table-->
+    <table class="table" align="center">
+      <thead>
+        <tr>
+            <th class="textcenter">Date</th>
+            <th class="textcenter">Place</th>
+            <th class="textcenter">Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="textcenter">08/05/2016</td>
+          <td class="textcenter">San Diego</td>
+          <td class="textcenter">7 days</td>
+        </tr>
+        <tr>
+          <td class="textcenter">12/20/2016</td>
+          <td class="textcenter">Peru</td>
+          <td class="textcenter">8 days</td>
+        </tr>
+        <tr>
+          <td class="textcenter">01/16/2017</td>
+          <td class="textcenter">New York</td>
+          <td class="textcenter">3 days</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!--return button and go-to-keyword button-->
+    <div class = "container2">
+      <div>
+        <br>
+        <p  id = "confirmButton" class="go_to_analysis"><a id = "button2" class="waves-effect waves-light btn" href = "search.html">Back to keyword</a>
+        <p  id = "confirmButton" class="go_to_analysis"><a id = "button2" class="waves-effect waves-light btn" href = "analyze.html">Go to analysis</a>
+      </div>
+    </div>
+
+    <script src="js/materialize.js"></script>
+    <script src="js/initiation.js"></script>
+    
+    <!--get user's choices of subject&keyword of analysis and display them-->
+    <script type="text/javascript">
+      var globalVariable1 = $.cookie("choice");
+      var globalVariable2 = $.cookie("keyword");
+      var displayed = "You had  " + globalVariable2 + " with " + globalVariable1;
+      document.getElementById("title").innerHTML = displayed;
+    </script>
+  </body>
 </html>
